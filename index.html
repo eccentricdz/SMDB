@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMDb</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="bmdb.js"></script>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="font-awesome.min.css" />
+<script src="prefixfree.min.js"></script>
+</head>
+
+<body>
+<center>
+<h1>
+<span id='b'>S</span>MDb
+</h1>
+<p id="tagline">Simple   Movie   Database</p>
+<div id="container">
+<p id='enter'>
+<input id='query' name='query' type="text" placeholder="Enter the name of the movie or person" />
+<i class="icon-search icon-2x"></i>
+</p>
+</div>
+</center>
+<ul id="suggestions">
+</ul>
+
+
+<script>
+$(document).ready(function(){
+	bmdb.init();
+});
+	</script>
+</body>
+</html>
